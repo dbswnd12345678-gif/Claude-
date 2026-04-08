@@ -21,6 +21,8 @@ from tools import ALL_TOOLS, TOOL_DEFINITIONS, handle_tool
 
 load_dotenv()
 
+PORT = int(os.getenv("PORT", 8000))
+
 # ── Globals ───────────────────────────────────────────────────────────────────
 
 _client: anthropic.AsyncAnthropic | None = None
